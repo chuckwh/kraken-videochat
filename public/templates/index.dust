@@ -1,4 +1,4 @@
-{>"layouts/dust" /}
+{>"layouts/video" /}
 
 {<body}
     <h1>Videochat</h1>
