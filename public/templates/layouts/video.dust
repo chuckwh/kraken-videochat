@@ -15,13 +15,13 @@
     <video />
 </div>
 
-<script>
+<script type="text/javascript">
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
 var constraints = {video: true};
 
 function successCallback(stream) {
-  window.stream = stream; // stream available to console
+  window.stream = stream; 
   var video = document.querySelector("video");
   video.src = window.URL.createObjectURL(stream);
   video.play();
