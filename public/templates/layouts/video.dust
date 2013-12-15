@@ -14,7 +14,7 @@
     {+body /}
     <video />
 </div>
-<script data-main="js/app" src="js/lib/require.js"></script>
+
 <script>
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
