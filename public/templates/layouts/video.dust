@@ -12,9 +12,26 @@
 <body>
 <div id="wrapper">
     {+body /}
+    <video />
 </div>
 <script data-main="js/app" src="js/lib/require.js"></script>
 <script>
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+
+var constraints = {video: true};
+
+function successCallback(stream) {
+  window.stream = stream; // stream available to console
+  var video = document.querySelector("video");
+  video.src = window.URL.createObjectURL(stream);
+  video.play();
+}
+
+function errorCallback(error){
+  console.log("navigator.getUserMedia error: ", error);
+}
+
+navigator.getUserMedia(constraints, successCallback, errorCallback);
 </script>
 </body>
 </html>
