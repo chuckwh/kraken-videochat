@@ -1,5 +1,5 @@
-{>"layouts/master" /}
+{>"layouts/dust" /}
 
 {<body}
-    <h1>{@pre type="content" key="index.greeting"/}</h1>
+    <h1>Videochat</h1>
 {/body}
