@@ -22,7 +22,7 @@
 			<textarea id="dataChannelReceive"></textarea>
 		</div>
 
-		<button id="sendButton" disabled>Send</button>
+		<button id="sendButton">Send</button>
 	</div>
 
 </div>

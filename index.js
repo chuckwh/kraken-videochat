@@ -84,7 +84,11 @@ kraken.create(app).listen(function (err, server) {
   }
 
   var io = require('socket.io').listen(server);
-
+  //added for heroku
+	io.configure(function () { 
+	  io.set("transports", ["xhr-polling"]); 
+	  io.set("polling duration", 10); 
+	});
   io.sockets.on('connection', function(socket) {
     // socket.emit('news', { hello: 'world' });
 
