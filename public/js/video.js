@@ -34,8 +34,8 @@ var sdpConstraints = {'mandatory': {
 
 var room = location.pathname.substring(1);
 if (room === '') {
-//  room = prompt('Enter room name:');
-  room = 'foo';
+ room = prompt('Enter room name:');
+  // room = 'foo';
 } else {
   //
 }
@@ -123,7 +123,7 @@ var constraints = {video: true};
 navigator.getUserMedia(constraints, handleUserMedia, handleUserMediaError);
 console.log('Getting user media with constraints', constraints);
 
-requestTurn('https://computeengineondemand.appspot.com/turn?username=41784574&key=4080218913');
+// requestTurn('https://computeengineondemand.appspot.com/turn?username=41784574&key=4080218913');
 
 function maybeStart() {
   if (!isStarted && localStream && isChannelReady) {

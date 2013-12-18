@@ -18,8 +18,8 @@
 		</div>
 
 		<div id='textareas'>
-			<textarea id="dataChannelSend" disabled placeholder="Press Start, enter some text, then press Send."></textarea>
-			<textarea id="dataChannelReceive" disabled></textarea>
+			<textarea id="dataChannelSend" placeholder="Press Start, enter some text, then press Send."></textarea>
+			<textarea id="dataChannelReceive"></textarea>
 		</div>
 
 		<button id="sendButton" disabled>Send</button>
