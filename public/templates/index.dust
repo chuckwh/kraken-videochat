@@ -8,7 +8,7 @@
 		<h1>Videochat</h1>
 	</div>
 	<h1>{@pre type="content" key="index.greeting"/}</h1>
-
+</div>
 
 	<div id='container'>
 
@@ -16,14 +16,24 @@
 			<video id='localVideo' autoplay muted></video>
 			<video id='remoteVideo' autoplay></video>
 		</div>
-
-		<div id='textareas'>
-			<textarea id="dataChannelSend" placeholder="Press Start, enter some text, then press Send."></textarea>
-			<textarea id="dataChannelReceive"></textarea>
+	  <div>
+	    <div class="ui button hover m6" id="startButton">Start</div>
+	   <div class="ui button hover m6"  id="callButton"  class="button">Call</div>
+	   <div class="ui button hover m6" id="hangupButton"  class="button">Hang Up</div>
+	  </div>
+		<div id='textareas' class="ui input focus">
+			<input type="text" id="dataChannelSend" placeholder="Press Start, enter some text, then press Send.">
+			<div class="ui segment">
+				<p  id="dataChannelReceive"></p>
+			</div>
 		</div>
 
-		<button id="sendButton">Send</button>
-	</div>
+		<div class="ui right labeled icon button m6"  id="sendButton">
+		  <i class="right chat icon"></i>
+		  Send
+		</div>
+		
+	
 
 </div>
    

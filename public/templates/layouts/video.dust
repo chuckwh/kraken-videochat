@@ -13,14 +13,9 @@
 <div id="wrapper">
     {+body /}
 
-<video id="localVideo" autoplay muted></video>
-<video id="remoteVideo" autoplay muted></video>
 
-  <div class="ui">
-    <button id="startButton">Start</button>
-    <button id="callButton">Call</button>
-    <button id="hangupButton">Hang Up</button>
-  </div>
+
+
 </div>
 <script type="text/javascript" src="/socket.io/socket.io.js"> </script>
 <script src='js/lib/adapter.js'></script>
