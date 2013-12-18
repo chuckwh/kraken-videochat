@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                     paths: ['public/css']
                 },
                 files: {
-                    '.build/css/app.css': 'public/css/app.less'
+                    'public/css/compiled/semantic.css': ['public/css/collections/*', 'public/css/elements/*', 'public/css/modules/*.less',  'public/css/modules/views/*'] 
                 }
             }
         },

@@ -4,10 +4,12 @@
 module.exports = function (server) {
 
     server.get('/', function (req, res) {
-        var model = { name: 'videochat' };
-        
-        res.render('index', model);
-        
-    });
+
+		 var model = { name: 'test'};
+
+	res.render('index', model);
+});
 
 };
+
+

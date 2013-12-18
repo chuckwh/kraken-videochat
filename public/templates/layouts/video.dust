@@ -7,31 +7,24 @@
 	<meta name="description" content="WebRTC codelab" />
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
     <title>{+title /}</title>
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/compiled/semantic.css" />
 </head>
 <body>
 <div id="wrapper">
     {+body /}
-    <video />
+
+<video id="localVideo" autoplay muted></video>
+<video id="remoteVideo" autoplay muted></video>
+
+  <div class="ui">
+    <button id="startButton">Start</button>
+    <button id="callButton">Call</button>
+    <button id="hangupButton">Hang Up</button>
+  </div>
 </div>
-
-<script type="text/javascript">
-navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
-
-var constraints = {video: true};
-
-function successCallback(stream) {
-  window.stream = stream; 
-  var video = document.querySelector("video");
-  video.src = window.URL.createObjectURL(stream);
-  video.play();
-}
-
-function errorCallback(error){
-  console.log("navigator.getUserMedia error: ", error);
-}
-
-navigator.getUserMedia(constraints, successCallback, errorCallback);
+<script type="text/javascript" src="/socket.io/socket.io.js"> </script>
+<script src='js/lib/adapter.js'></script>
+<script type="text/javascript" src="js/video.js"> </script>
 </script>
 </body>
 </html>

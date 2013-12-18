@@ -1,5 +1,30 @@
+
 {>"layouts/video" /}
 
 {<body}
-    <h1>Videochat</h1>
+<div class="ui icon header">
+	<i class="circular chat icon"></i>
+	<div class="sub header"> 
+		<h1>Videochat</h1>
+	</div>
+	<h1>{@pre type="content" key="index.greeting"/}</h1>
+
+
+	<div id='container'>
+
+		<div id='videos'>
+			<video id='localVideo' autoplay muted></video>
+			<video id='remoteVideo' autoplay></video>
+		</div>
+
+		<div id='textareas'>
+			<textarea id="dataChannelSend" disabled placeholder="Press Start, enter some text, then press Send."></textarea>
+			<textarea id="dataChannelReceive" disabled></textarea>
+		</div>
+
+		<button id="sendButton" disabled>Send</button>
+	</div>
+
+</div>
+   
 {/body}
