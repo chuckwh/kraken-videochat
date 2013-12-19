@@ -12,3 +12,140 @@ video {
 .m6 {
 	margin: 6px !important;
 }
+
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+ 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+video.local-video {
+	width: 60px;
+	display:block;
+}
+video.remote-video {
+	width: 300px;
+	display:block;
+}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+video.local-video {
+	width: 60px;
+	display:block;
+}
+video.remote-video {
+	width: 300px;
+	display:block;
+}
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+video.local-video {
+	width: 60px;
+	display:block;
+}
+video.remote-video {
+	width: 300px;
+	display:block;
+}
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+video.local-video {
+	width: 120px;
+	display:inline-block
+}
+video.remote-video {
+	width: 600px;
+	display:inline-block;
+}
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+video.local-video {
+	width: 120px;
+	display:block;
+}
+video.remote-video {
+	width: 600px;
+	display:inline-block;
+}
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+video.local-video {
+	width: 120px;
+	display:block;
+}
+video.remote-video {
+	width: 600px;
+	display:inline-block;
+}
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+video.local-video {
+	width: 120px;
+	display:block;
+}
+video.remote-video {
+	width: 600px;
+	display:inline-block;
+}
+}
+ 
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+video.local-video {
+	width: 120px;
+	display:block;
+}
+video.remote-video {
+	width: 600px;
+	display:inline-block;
+}
+}
+ 
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+video.local-video {
+	width: 60px;
+	display:block;
+}
+video.remote-video {
+	width: 280px;
+	display:inline-block;
+}
+}

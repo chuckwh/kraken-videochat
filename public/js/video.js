@@ -7,32 +7,32 @@ var receiveTextarea = document.getElementById("dataChannelReceive");
 
 sendButton.onclick = sendData;
 
-var isChannelReady;
-var isInitiator;
-var isStarted;
-var localStream;
-var pc;
-var remoteStream;
-var turnReady;
+var isChannelReady,
+isInitiator,
+isStarted,
+localStream,
+pc,
+remoteStream,
+turnReady,
 
-var pc_config = webrtcDetectedBrowser === 'firefox' ?
+pc_config = webrtcDetectedBrowser === 'firefox' ?
   {'iceServers':[{'url':'stun:23.21.150.121'}]} : // number IP
-  {'iceServers': [{'url': 'stun:stun.l.google.com:19302'}]};
+  {'iceServers': [{'url': 'stun:stun.l.google.com:19302'}]},
 
-var pc_constraints = {
+pc_constraints = {
   'optional': [
     {'DtlsSrtpKeyAgreement': true},
     {'RtpDataChannels': true}
-  ]};
+  ]},
 
 // Set up audio and video regardless of what devices are present.
-var sdpConstraints = {'mandatory': {
+sdpConstraints = {'mandatory': {
   'OfferToReceiveAudio':true,
-  'OfferToReceiveVideo':true }};
+  'OfferToReceiveVideo':true }},
 
 /////////////////////////////////////////////
 
-var room = location.pathname.substring(1);
+room = location.pathname.substring(1);
 if (room === '') {
  room = prompt('Enter room name:');
   // room = 'foo';
@@ -181,25 +181,7 @@ function sendData() {
   trace('Sent data: ' + data);
 }
 
-// function closeDataChannels() {
-//   trace('Closing data channels');
-//   sendChannel.close();
-//   trace('Closed data channel with label: ' + sendChannel.label);
-//   receiveChannel.close();
-//   trace('Closed data channel with label: ' + receiveChannel.label);
-//   localPeerConnection.close();
-//   remotePeerConnection.close();
-//   localPeerConnection = null;
-//   remotePeerConnection = null;
-//   trace('Closed peer connections');
-//   startButton.disabled = false;
-//   sendButton.disabled = true;
-//   closeButton.disabled = true;
-//   dataChannelSend.value = "";
-//   dataChannelReceive.value = "";
-//   dataChannelSend.disabled = true;
-//   dataChannelSend.placeholder = "Press Start, enter some text, then press Send.";
-// }
+
 
 function gotReceiveChannel(event) {
   trace('Receive Channel Callback');
