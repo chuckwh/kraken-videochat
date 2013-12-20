@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
 	<meta name="keywords" content="JavaScript, WebRTC" />
-	<meta name="description" content="WebRTC codelab" />
+	<meta name="description" content="WebRTC on the KrakenJs Framework" />
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
     <title>{+title /}</title>
     <link rel="stylesheet" href="css/compiled/semantic.css" />
@@ -12,10 +12,6 @@
 <body>
 <div id="wrapper" class="ui grid">
     {+body /}
-
-
-
-
 </div>
 <script type="text/javascript" src="/socket.io/socket.io.js"> </script>
 <script src='js/lib/adapter.js'></script>

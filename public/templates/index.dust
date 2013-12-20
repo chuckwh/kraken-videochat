@@ -1,4 +1,3 @@
-
 {>"layouts/video" /}
 
 {<body}
@@ -37,9 +36,5 @@
 			  Send
 			</div>
 		</div>
-		
-	
-
-
    
 {/body}
