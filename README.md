@@ -1,12 +1,20 @@
 # kraken-videochat
 
-A simple webrtc based video chat developed for the krakenjs web application framework: https://github.com/paypal/kraken-js
+Source code for a small tutorial on how to wire up a webRTC video chat. The tutorial is here:
+
+http://www.webdevinthecloud.com/blog/2013/12/19/building-a-webrtc-video-chat-service-on-nodejs-and-krakenjs
+
+This is a simple webrtc based video chat developed for the krakenjs web application framework: https://github.com/paypal/kraken-js. The webRTC and socket connection code is based on code found here:
+
+https://bitbucket.org/webrtc/codelab/src/ace46299dbf95217060b170a3c11c3099acedc59
+
+It is strongly recommended that if you wish to learn webRTC that you follow the steps outlined in that tutorial before you attempt to use this code to wire it up in krakenjs. 
 
 This is not, by any means, production-ready software. I cannot guarantee that if you use this software bad things won't happen. These can range from the complete elimination of everything near and dear to you, to a sudden loss in your ability to spell. And anything else you can think of.
 
 In other words, this repository is simply an experiment, a playground, to test how well the kraken framework plays with webRTC and sockets. Feel free to fork off this and do whatever you wish with it. The code here is issued as an open MIT open source license, at the end of this document.
 
-For instructions on how to use this, please see
+For instructions on how to use this, please see http://www.webdevinthecloud.com/blog/2013/12/19/building-a-webrtc-video-chat-service-on-nodejs-and-krakenjs
 
 For you legal beagles out there:
 
